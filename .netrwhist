@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/wangxing/NTNU/simula'
 let g:netrw_dirhist_2='/home/wangxing/Software/sys161/man'
 let g:netrw_dirhist_3='/home/wangxing/Software/sys161/man/sys161'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/home/wangxing/Workspaces/Ruby_Workspace/abakus-events-no
 let g:netrw_dirhist_6='/home/wangxing/Workspaces/Ruby_Workspace/zenja.github.com-octopress'
 let g:netrw_dirhist_7='/home/wangxing/.vim/colors'
 let g:netrw_dirhist_8='/home/wangxing/Workspaces/Ruby_Workspace/abakus-events-notifier'
+let g:netrw_dirhist_9='/var/www/racktest'
