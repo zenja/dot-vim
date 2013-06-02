@@ -3,6 +3,9 @@ set t_Co=256
 "colors Tomorrow-Night-Bright
 colors jellybeans
 
+" Map jj to ESC in insert mode
+inoremap jj <ESC>
+
 " Set the width of TAB
 set tabstop=4
 " Expand tab to spaces
