@@ -81,3 +81,8 @@ syntax on
 filetype on
 filetype plugin indent on
 
+" have j,k to operate on display lines as default
+nnoremap k gk
+nnoremap gk k
+nnoremap j gj
+nnoremap gj j
