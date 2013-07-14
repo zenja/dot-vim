@@ -9,3 +9,6 @@ files to ignore
 .*.sw[a-z]
 *.un~
 Session.vim
+
+# Vim history
+.netrwhist
