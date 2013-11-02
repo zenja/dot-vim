@@ -1,17 +1,3 @@
-set nocompatible
-filetype off
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-
-" The bundles you install will be listed here
-
-filetype plugin indent on
-
 " Set color scheme
 set t_Co=256
 "colors Tomorrow-Night-Bright
@@ -59,8 +45,10 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h 
 
-" Syntax Highlighting
+" Syntax Highlighting and Validation
 syntax on
+filetype on
+filetype plugin indent on
 
 " have j,k to operate on display lines as default
 nnoremap k gk
