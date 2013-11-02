@@ -14,6 +14,7 @@ Bundle 'gmarik/vundle'
 
 " TODO: The bundles you install will be listed here
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'scrooloose/nerdtree'
 
 filetype plugin indent on
 
@@ -75,3 +76,6 @@ nnoremap gj j
 " Powerline setup
 " laststatus ensures that Powerline shows up even if you don't have any splits.
 set laststatus=2
+
+" For NERDTree
+map <F2> :NERDTreeToggle<CR>
