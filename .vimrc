@@ -85,3 +85,6 @@ map <F2> :NERDTreeToggle<CR>
 
 " For numbers.vim
 nnoremap <F3> :NumbersToggle<CR>
+
+" Change leader key to ','
+let mapleader=","
