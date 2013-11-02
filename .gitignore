@@ -12,3 +12,7 @@ Session.vim
 
 # .netrwhist
 .netrwhist
+
+# bundles that can be installed by vundle automatically
+/bundle
+!/bundle/vundle
