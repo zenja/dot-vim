@@ -16,6 +16,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'scrooloose/nerdtree'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'Lokaltog/vim-easymotion'
 
 filetype plugin indent on
 
