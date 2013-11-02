@@ -17,6 +17,7 @@ Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'scrooloose/nerdtree'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'myusuf3/numbers.vim'
 
 filetype plugin indent on
 
@@ -81,3 +82,6 @@ set laststatus=2
 
 " For NERDTree
 map <F2> :NERDTreeToggle<CR>
+
+" For numbers.vim
+nnoremap <F3> :NumbersToggle<CR>
