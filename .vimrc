@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 " TODO: The bundles you install will be listed here
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'scrooloose/nerdtree'
+Bundle 'davidhalter/jedi-vim'
 
 filetype plugin indent on
 
