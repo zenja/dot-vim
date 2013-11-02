@@ -88,3 +88,7 @@ nnoremap <F3> :NumbersToggle<CR>
 
 " Change leader key to ','
 let mapleader=","
+
+" C-J, C-k: Switch to next/previous window and maximize it
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
