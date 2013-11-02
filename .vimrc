@@ -13,6 +13,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " TODO: The bundles you install will be listed here
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 filetype plugin indent on
 
@@ -70,3 +71,7 @@ nnoremap k gk
 nnoremap gk k
 nnoremap j gj
 nnoremap gj j
+
+" Powerline setup
+" laststatus ensures that Powerline shows up even if you don't have any splits.
+set laststatus=2
