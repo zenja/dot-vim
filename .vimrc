@@ -18,6 +18,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'myusuf3/numbers.vim'
+Bundle 'fholgado/minibufexpl.vim'
 
 filetype plugin indent on
 
@@ -92,3 +93,16 @@ let mapleader=","
 " C-J, C-k: Switch to next/previous window and maximize it
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
+
+" Add the virtualenv's site-packages to vim path
+" so that vim is aware of virtualenv
+py << EOF
+import os.path
+import sys
+import vim
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    sys.path.insert(0, project_base_dir)
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+EOF
