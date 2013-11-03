@@ -146,3 +146,13 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 " Don't autofold code
 let g:pymode_folding = 0
+
+" EasyMotion Documentation
+" All motions are now triggered with <Leader><Leader> by default
+" Commands:
+" <leader><leader>w
+" <leader><leader>e
+" <leader><leader>b
+" <leader><leader>gE
+" <leader><leader>f<search character>
+" <leader><leader>t
