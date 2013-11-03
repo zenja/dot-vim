@@ -19,6 +19,7 @@ Bundle 'davidhalter/jedi-vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'fholgado/minibufexpl.vim'
+Bundle 'klen/python-mode'
 
 filetype plugin indent on
 
@@ -94,15 +95,54 @@ let mapleader=","
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
 
-" Add the virtualenv's site-packages to vim path
-" so that vim is aware of virtualenv
-py << EOF
-import os.path
-import sys
-import vim
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    sys.path.insert(0, project_base_dir)
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
+" Python-mode
+" Keys:
+" K             Show python docs
+" Rope disabled and Jedi is used instead
+" <Ctrl-Space>  Jedi-Vim autocomplete
+" <Leader>b     Set, unset breakpoint (g:pymode_breakpoint enabled)
+" [[            Jump on previous class or function (normal, visual, operator modes)
+" ]]            Jump on next class or function (normal, visual, operator modes)
+" [M            Jump on previous class or method (normal, visual, operator modes)
+" ]M            Jump on next class or method (normal, visual, operator modes)
+" aC, C         Select a class. Ex: vaC, daC, dC, yaC, yC, caC, cC (normal, operator modes)
+" iC            Select inner class. Ex: viC, diC, yiC, ciC (normal, operator modes)
+" aM, M         Select a function or method. Ex: vaM, daM, dM, yaM, yM, caM, cM (normal, operator modes)
+" iM            Select inner function or method. Ex: viM, diM, yiM, ciM (normal, operator modes)
+" Commands:
+" see also :help PythonModeCommands
+" :Pydoc <args>         Show python documentation
+" :PyLintToggle         Enable/disable pylint
+" :PyLintCheckerToggle  Toggle code checker (pylint, pyflakes)
+" :PyLint               Check current buffer
+" :PyLintAuto           Automatically fix PEP8 errors
+" :Pyrun                Run current buffer in python
+
+" Let Jedi take over python autocomplete instaed of pymode_rope
+let g:pymode_rope = 0
+
+" Documentation
+let g:pymode_doc = 1
+let g:pymode_doc_key = 'K'
+
+"Linting
+let g:pymode_lint = 1
+let g:pymode_lint_checker = "pyflakes,pep8"
+" Auto check on save
+let g:pymode_lint_write = 1
+
+" Support virtualenv
+let g:pymode_virtualenv = 1
+
+" Enable breakpoints plugin
+let g:pymode_breakpoint = 1
+let g:pymode_breakpoint_key = '<leader>b'
+
+" syntax highlighting
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
+
+" Don't autofold code
+let g:pymode_folding = 0
