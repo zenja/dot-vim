@@ -20,6 +20,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'klen/python-mode'
+Bundle 'ervandew/supertab'
 
 filetype plugin indent on
 
