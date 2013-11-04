@@ -161,3 +161,5 @@ let g:pymode_folding = 0
 
 " Tagbar shortcut
 nnoremap <leader><leader>l :TagbarToggle<CR>
+
+nnoremap <leader>w <C-W><C-W>
