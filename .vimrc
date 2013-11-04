@@ -153,6 +153,7 @@ let g:pymode_folding = 0
 " All motions are now triggered with <Leader><Leader> by default
 " Commands:
 " <leader><leader>w
+" <leader><leader>j
 " <leader><leader>e
 " <leader><leader>b
 " <leader><leader>gE
