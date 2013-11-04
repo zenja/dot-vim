@@ -183,3 +183,7 @@ function! s:CloseIfOnlyNerdTreeLeft()
   endif
 endfunction
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+
+" Set minimum window height to 1,
+" so that MiniBufExplorer won't be hide when some window is maximized
+set wmh=1
