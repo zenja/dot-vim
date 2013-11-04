@@ -21,6 +21,7 @@ Bundle 'myusuf3/numbers.vim'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'klen/python-mode'
 Bundle 'ervandew/supertab'
+Bundle 'majutsushi/tagbar'
 
 filetype plugin indent on
 
@@ -157,3 +158,6 @@ let g:pymode_folding = 0
 " <leader><leader>gE
 " <leader><leader>f<search character>
 " <leader><leader>t
+
+" Tagbar shortcut
+nnoremap <leader><leader>l :TagbarToggle<CR>
