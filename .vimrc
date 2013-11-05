@@ -65,12 +65,6 @@ au FileType html setl tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab
 set foldmethod=indent
 set foldlevel=99
 
-" Switch between window splits quickly
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
-map <c-h> <c-w>h 
-
 " Syntax Highlighting
 syntax on
 
