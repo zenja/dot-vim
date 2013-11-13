@@ -159,9 +159,14 @@ nnoremap <leader>w <C-W><C-W>
 " MiniBufExplorer Shortcuts
 noremap <C-J>   :MBEbn<CR><C-W>_
 noremap <C-K>   :MBEbp<CR><C-W>_
+nnoremap <leader><leader>q   :MBEbw<CR>
 
 " Open NERDTree automatically when opens a file
 " and focus on the file instead of NERDTree itself
+" MBE is also opened automatically to prevent strange behaviour
+" when using Jedi autocompletion while NERDTree is opened
+" whose reason is not clear yet :(
+autocmd VimEnter * MBEOpen
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 
