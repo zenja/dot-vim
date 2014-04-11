@@ -30,6 +30,9 @@ set t_Co=256
 "colors Tomorrow-Night-Bright
 colors jellybeans
 
+" GUI settings
+set guifont=Monaco\ for\ Powerline:h14
+
 " Map jj to ESC in insert mode
 inoremap jj <ESC>
 
