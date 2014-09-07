@@ -22,6 +22,7 @@ Bundle 'fholgado/minibufexpl.vim'
 Bundle 'klen/python-mode'
 Bundle 'ervandew/supertab'
 Bundle 'majutsushi/tagbar'
+Bundle 'https://github.com/tpope/vim-commentary'
 
 filetype plugin indent on
 
