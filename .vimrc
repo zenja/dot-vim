@@ -178,10 +178,20 @@ autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 
 " Close all open buffers on entering a window if the only
-" buffer that's left is the NERDTree buffer
+" buffer that's left is the NERDTree buffer or MiniBufExplorer
 function! s:CloseIfOnlyNerdTreeLeft()
   if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
+    if bufwinnr(t:NERDTreeBufName) != -1 && bufwinnr("-MiniBufExplorer-") != -1
+      if winnr("$") == 2
+        q
+      endif
+    endif
+    if bufwinnr(t:NERDTreeBufName) != -1 && bufwinnr("-MiniBufExplorer-") == -1
+      if winnr("$") == 1
+        q
+      endif
+    endif
+    if bufwinnr(t:NERDTreeBufName) == -1 && bufwinnr("-MiniBufExplorer-") != -1
       if winnr("$") == 1
         q
       endif
