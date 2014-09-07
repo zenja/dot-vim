@@ -71,6 +71,9 @@ set foldlevel=99
 " Syntax Highlighting
 syntax on
 
+" Highlight Search Pattern
+set hlsearch
+
 " have j,k to operate on display lines as default
 nnoremap k gk
 nnoremap gk k
